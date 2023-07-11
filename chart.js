@@ -20,7 +20,7 @@ async function drawDashboard() {
 
   const metrics = [
     {
-      key: "percentage",
+      key: "percent",
       title: "Progress (%)",
       note: "out of 101%"
     },
