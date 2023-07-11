@@ -1,8 +1,11 @@
 import configparser
 import csv
 
+with open('saveData2.ini', 'r') as file:
+    content = file.read().splitlines()[:-1]
+
 config_reader = configparser.ConfigParser()
-config_reader.read('saveData2.ini')
+config_reader.read_string('\n'.join(content))
 
 game_data = config_reader['Game']
 
