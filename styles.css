@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  background-color: #a069b8;
+}
+
+header {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+header h1 {
+ font-weight: 900;
+ margin: 3rem;
+}
+
+section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0rem 1rem;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.75rem 0.5rem;
+  box-shadow: 0 0 3px -1px hsl(215, 29%, 35%);
+}
+
+article h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+article p:nth-of-type(1) {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #F2E86D;
+}
+
+article p:nth-of-type(2) {
+  font-size: 0.9rem;
+  color: #343434;
+}
