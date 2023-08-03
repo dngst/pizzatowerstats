@@ -1,5 +1,16 @@
 async function drawDashboard() {
-  const dataset = await d3.csv("game_data.csv")
+  const datasets = {
+    current: {
+      file_path: "game_data.csv"
+    },
+    alt_universe: {
+      file_path: "alt_universe.csv"
+    }
+  }
+  let urlParams = new URLSearchParams(window.location.search)
+  const defaultDataset = "current"
+  const dataset = datasets[urlParams.get('data') || defaultDataset]
+  const loadedData = await d3.csv(dataset.file_path)
 
   const wrapper = d3.select("#wrapper")
 
@@ -12,7 +23,7 @@ async function drawDashboard() {
     article.append("h3").text(title);
     article.attr("id", metric.key)
 
-    const value = dataset[0][metric.key]
+    const value = loadedData[0][metric.key]
     article.append("p").text(value);
 
     article.append("p").text(note);
