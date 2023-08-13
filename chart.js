@@ -1,10 +1,10 @@
 async function drawDashboard() {
   const datasets = {
     save_file_1: {
-      file_path: "save_file_1.csv"
+      file_path: "data/save_file_1.csv"
     },
     save_file_2: {
-      file_path: "save_file_2.csv"
+      file_path: "data/save_file_2.csv"
     }
   }
   let urlParams = new URLSearchParams(window.location.search)
