@@ -16,7 +16,7 @@ values = [int(float(game_data.get(key, '0.000000').strip('"'))) for key in keys]
 headers = keys
 rows = [values]
 
-with open('game_data.csv', 'w', newline="") as output:
+with open('save_file_2.csv', 'w', newline="") as output:
     writer = csv.writer(output)
     writer.writerow(headers)
     writer.writerows(rows)

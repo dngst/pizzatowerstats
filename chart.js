@@ -1,14 +1,14 @@
 async function drawDashboard() {
   const datasets = {
-    current: {
-      file_path: "game_data.csv"
+    save_file_1: {
+      file_path: "save_file_1.csv"
     },
-    alt_universe: {
-      file_path: "alt_universe.csv"
+    save_file_2: {
+      file_path: "save_file_2.csv"
     }
   }
   let urlParams = new URLSearchParams(window.location.search)
-  const defaultDataset = "current"
+  const defaultDataset = "save_file_1"
   const dataset = datasets[urlParams.get('data') || defaultDataset]
   const loadedData = await d3.csv(dataset.file_path)
 
