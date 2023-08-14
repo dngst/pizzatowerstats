@@ -16,6 +16,10 @@ async function drawDashboard() {
 
   const section = wrapper.append("section");
 
+  wrapper.append("h4")
+        .text(snotty(loadedData[0]))
+        .attr("class", "snotty-h4")
+
   function drawMetric(metric) {
     const { key, title, note } = metric;
 
@@ -50,6 +54,12 @@ async function drawDashboard() {
   metrics.forEach((metric) => {
     drawMetric(metric);
   });
+
+  function snotty(data) {
+    if(data.snotty == 0) {
+      return "Snotty Approved"
+    }
+  }
 }
 
 drawDashboard()

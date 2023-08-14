@@ -9,7 +9,7 @@ config_reader.read_string('\n'.join(content))
 
 game_data = config_reader['Game']
 
-keys = ['percent', 'minutes', 'seconds']
+keys = ['percent', 'minutes', 'seconds', 'snotty']
 
 values = [int(float(game_data.get(key, '0.000000').strip('"'))) for key in keys]
 
