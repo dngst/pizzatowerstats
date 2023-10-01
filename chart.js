@@ -5,6 +5,9 @@ async function drawDashboard() {
     },
     save_file_2: {
       file_path: "data/save_file_2.csv"
+    },
+    save_file_3: {
+      file_path: "data/save_file_3.csv"
     }
   }
   let urlParams = new URLSearchParams(window.location.search)
