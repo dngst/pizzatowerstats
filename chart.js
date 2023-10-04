@@ -19,9 +19,9 @@ async function drawDashboard() {
 
   const section = wrapper.append("section");
 
-  wrapper.append("h4")
+  wrapper.append("p")
         .text(snotty(loadedData[0]))
-        .attr("class", "snotty-h4")
+        .attr("class", "snotty-p")
 
   function drawMetric(metric) {
     const { key, title, note } = metric;
