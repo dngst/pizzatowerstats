@@ -17,23 +17,23 @@ async function drawDashboard() {
 
   const wrapper = d3.select("#wrapper")
 
-  const section = wrapper.append("section");
+  const section = wrapper.append("section")
 
   wrapper.append("p")
         .text(snotty(loadedData[0]))
         .attr("class", "snotty-p")
 
   function drawMetric(metric) {
-    const { key, title, note } = metric;
+    const { key, title, note } = metric
 
-    const article = section.append("article");
-    article.append("h3").text(title);
+    const article = section.append("article")
+    article.append("h3").text(title)
     article.attr("id", metric.key)
 
     const value = loadedData[0][metric.key]
-    article.append("p").text(value);
+    article.append("p").text(value)
 
-    article.append("p").text(note);
+    article.append("p").text(note)
   }
 
   const metrics = [
@@ -52,11 +52,11 @@ async function drawDashboard() {
       title: "Time (S)",
       note: "Seconds"
     },
-  ];
+  ]
 
   metrics.forEach((metric) => {
-    drawMetric(metric);
-  });
+    drawMetric(metric)
+  })
 
   function snotty(data) {
     if(data.snotty == 0) {

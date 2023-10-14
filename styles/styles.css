@@ -9,8 +9,16 @@ header {
 }
 
 header h1 {
- font-weight: 900;
- margin: 3rem;
+  font-weight: 900;
+  margin: 3rem;
+}
+
+header a:link {
+  color: #42213D;
+}
+
+header a:visited {
+  color: #F0A7A0;
 }
 
 section {
