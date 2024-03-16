@@ -27,7 +27,7 @@ async function drawDashboard() {
     const { key, title, note } = metric
 
     const article = section.append("article")
-    article.append("h3").text(title)
+    article.append("h2").text(title)
     article.attr("id", metric.key)
 
     const value = loadedData[0][metric.key]
