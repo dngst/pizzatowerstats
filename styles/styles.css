@@ -1,6 +1,5 @@
 body {
   font-family: sans-serif;
-  background-color: #a069b8;
 }
 
 header {
@@ -11,14 +10,6 @@ header {
 header h1 {
   font-weight: 900;
   margin: 3rem;
-}
-
-header a:link {
-  color: #42213D;
-}
-
-header a:visited {
-  color: #F0A7A0;
 }
 
 section {
@@ -38,21 +29,18 @@ article {
 
 article h2 {
   font-size: 1.5rem;
-  color: white;
 }
 
 article p:nth-of-type(1) {
   font-size: 3.5rem;
   font-weight: 900;
-  color: #F2E86D;
 }
 
 article p:nth-of-type(2) {
   font-size: 0.9rem;
-  color: #343434;
 }
 
 .snotty-p {
   text-align: center;
-  color: #B0D068;
 }
+
