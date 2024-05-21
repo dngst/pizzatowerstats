@@ -3,16 +3,19 @@ body {
     background-color: #5E26A7;
 }
 
+#wrapper {
+    padding: 1rem;
+}
+
 header {
     text-align: center;
     text-transform: capitalize;
     a {
         color: #FFE444;
-        margin: 0.3%;
+        margin: 0 0.5rem;
     }
     h1 {
         font-size: 3em;
-        font-weight: 900;
         margin: 3rem;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px;
@@ -29,7 +32,6 @@ section {
 
 article {
     display: flex;
-    margin-top: 1rem;
     align-items: center;
     flex-direction: column;
     padding: 0.75rem 0.5rem;
@@ -64,6 +66,10 @@ article p:nth-of-type(2) {
 
     section {
         grid-template-columns: 1fr;
+    }
+
+    article {
+        margin: 0.5rem 0;
     }
 }
 
