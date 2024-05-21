@@ -3,13 +3,13 @@ body {
     background-color: #5E26A7;
 }
 
-a {
-    color: #FFE444;
-}
-
 header {
     text-align: center;
     text-transform: capitalize;
+    a {
+        color: #FFE444;
+        margin: 0.3%;
+    }
     h1 {
         font-size: 3em;
         font-weight: 900;
